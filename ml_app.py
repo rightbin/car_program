@@ -43,7 +43,7 @@ def run_ml_app():
     
     new_data = new_data.reshape(1,-1)
     
-    sc_X = joblib.load('data/sc_x.pkl')
+    sc_X = joblib.load('data/sc_X.pkl')
 
     new_data = sc_X.transform(new_data)
 
